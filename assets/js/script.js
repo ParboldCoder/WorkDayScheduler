@@ -26,3 +26,14 @@ $(document).ready(function() {
     timeBlock.append(hourCol, textArea, saveBtn);
     $('.container').append(timeBlock);
   }
+
+  updateColors();
+
+  setInterval(updateColors, 60000);
+
+  $('.time-block button').on('click', function() {
+    var eventId = $(this).prev().attr('id');
+    var eventText = $(this).prev().val();
+    localStorage.setItem(eventId, eventText);
+  });
+});
