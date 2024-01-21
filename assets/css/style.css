@@ -11,6 +11,7 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: auto;
 }
 
 header {
@@ -27,6 +28,8 @@ header {
 }
 
 .time-block {
+  display: inline;
+  position: relative;
   text-align: center;
   border-radius: 15px;
 }
@@ -59,6 +62,8 @@ header {
 }
 
 .saveBtn {
+  display: block;
+  position: relative;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
