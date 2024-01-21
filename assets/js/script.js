@@ -16,3 +16,13 @@ $(document).ready(function() {
       }
     });
   }
+  
+  for (var i = 9; i <= 17; i++) {
+    var timeBlock = $('<div>').addClass('time-block').attr('data-hour', i);
+    var hourCol = $('<div>').addClass('hour').text(dayjs().hour(i).format('hA'));
+    var textArea = $('<textarea>').attr('id', 'event-' + i);
+    var saveBtn = $('<button>').addClass('saveBtn').text('Save');
+
+    timeBlock.append(hourCol, textArea, saveBtn);
+    $('.container').append(timeBlock);
+  }
