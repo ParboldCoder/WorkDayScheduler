@@ -1,0 +1,77 @@
+body {
+    background-color: #f5f5f5;
+    color: #000000;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #f5f5f5;
+}
+
+#dark-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #707070;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+  
+#dark-btn span {
+    width: 18px;
+    height: 18px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dark-btn.dark-btn-on {
+    padding-left: 23px;
+    background-color: #ffffff;
+}
+
+
+.fa-sun,
+.fa-moon {
+  color: color: #333333;;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 5rem;
+}
+
+#sun.d-none,
+#moon.d-none {
+    display: none;
+}
+
+footer {
+    background-color: #f5f5f5;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode footer {
+    background-color: #333333;
+    color: #f5f5f5;
+}
+
+.header {
+    text-align: center;
+    padding: 60px;
+    background-color: #f5f5f5;
+    color: #333333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode header {
+    background-color: #333333;
+    color: #f5f5f5;
+}
